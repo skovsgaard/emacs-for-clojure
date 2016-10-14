@@ -18,12 +18,33 @@
 ;; Highlight current line
 (global-hl-line-mode 1)
 
+;; Line up and down
+(defun smart-open-line ()
+  "Insert a new line and move to it"
+  (interactive)
+  (move-end-of-line nil)
+  (newline-and-indent))
+
+(defun smart-open-line-above ()
+  "Insert a new line above and move to it."
+  (interactive)
+  (move-beginning-of-line nil)
+  (newline-and-indent)
+  (forward-line -1)
+  (indent-according-to-mode))
+
+(global-set-key [(control return)] 'smart-open-line)
+(global-set-key [(control shift return)] 'smart-open-line-above)
+
 ;; Interactive search key bindings. By default, C-s runs
 ;; isearch-forward, so this swaps the bindings.
 (global-set-key (kbd "C-s") 'isearch-forward-regexp)
 (global-set-key (kbd "C-r") 'isearch-backward-regexp)
 (global-set-key (kbd "C-M-s") 'isearch-forward)
 (global-set-key (kbd "C-M-r") 'isearch-backward)
+
+;; Make the indentation behave normally
+(define-key global-map (kbd "RET") 'newline-and-indent)
 
 ;; Don't use hard tabs
 (setq-default indent-tabs-mode nil)

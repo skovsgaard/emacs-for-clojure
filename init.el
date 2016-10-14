@@ -66,7 +66,13 @@
     tagedit
 
     ;; git integration
-    magit))
+    magit
+
+    ;; Ruby stuff
+    ruby-mode
+
+    ;; Let's see if we can install LFE like this
+    lfe-mode))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
