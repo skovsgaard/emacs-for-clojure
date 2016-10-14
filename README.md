@@ -1,4 +1,8 @@
-# this is a Clojure-friendly emacs config
+# Forked and tweaked version of flyingmachine/emacs-for-clojure
+
+This is a fork with a few tweaks of things I didn't like of the original repo, e.g. not using `newline-and-indent` or not showing column numbers by default. Aside from these small tweaks, all the text below still applies.
+
+---
 
 If you're new to emacs, check out
 [this introductory tutorial](http://www.braveclojure.com/basic-emacs/)!
