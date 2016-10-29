@@ -29,7 +29,7 @@
 (load-theme 'zenburn t)
 
 ;; increase font size for better readability
-(set-face-attribute 'default nil :font "Fira Code-13")
+;;(set-face-attribute 'default nil :font "Fira Code-13")
 
 ;; I wanna see column numbers
 (setq column-number-mode t)

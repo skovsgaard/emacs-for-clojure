@@ -1,5 +1,7 @@
 .smex-items
 *~$
+.recentf*
+ido.last*
 places
 .recentf
 ido.last

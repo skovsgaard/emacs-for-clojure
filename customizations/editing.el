@@ -33,8 +33,8 @@
   (forward-line -1)
   (indent-according-to-mode))
 
-(global-set-key [(control return)] 'smart-open-line)
-(global-set-key [(control shift return)] 'smart-open-line-above)
+(global-set-key (kbd "<C-return>") 'smart-open-line)
+(global-set-key (kbd "<C-S-return>") 'smart-open-line-above)
 
 ;; Interactive search key bindings. By default, C-s runs
 ;; isearch-forward, so this swaps the bindings.
