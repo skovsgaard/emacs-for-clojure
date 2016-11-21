@@ -1,3 +1,6 @@
+;;; I probably shouldn't do this
+(setq warning-minimum-level :emergency)
+
 ;;;;
 ;; Packages
 ;;;;
@@ -145,7 +148,7 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (tagedit smex rainbow-delimiters projectile paredit magit lfe-mode ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
+    (markdown-mode hy-mode alchemist tagedit smex rainbow-delimiters projectile paredit magit lfe-mode ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
