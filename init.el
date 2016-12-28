@@ -140,6 +140,9 @@
 (load "setup-clojure.el")
 (load "setup-js.el")
 (load "setup-lfe.el")
+(load "setup-hy.el")
+(load "setup-racket.el")
+(load "setup-ocaml.el")
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -148,7 +151,7 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (yaml-mode markdown-mode hy-mode alchemist tagedit smex rainbow-delimiters projectile paredit magit lfe-mode ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
+    (company flycheck erlang merlin utop tuareg racket-mode yaml-mode markdown-mode hy-mode alchemist tagedit smex rainbow-delimiters projectile paredit magit lfe-mode ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
