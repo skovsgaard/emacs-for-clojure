@@ -75,7 +75,10 @@
     ruby-mode
 
     ;; Let's see if we can install LFE like this
-    lfe-mode))
+    lfe-mode
+
+    ;; Let's add Haxe too
+    haxe-mode))
 
 ;; On OS X, an Emacs instance started from the graphical user
 ;; interface will have a different environment than a shell in a
@@ -136,10 +139,11 @@
 ;; For editing lisps
 (load "elisp-editing.el")
 
-;; Langauage-specific
+;; Language-specific
 (load "setup-clojure.el")
 (load "setup-js.el")
 (load "setup-lfe.el")
+(load "setup-elixir.el")
 (load "setup-hy.el")
 (load "setup-racket.el")
 (load "setup-ocaml.el")
@@ -151,10 +155,10 @@
  '(coffee-tab-width 2)
  '(package-selected-packages
    (quote
-    (company flycheck erlang merlin utop tuareg racket-mode yaml-mode markdown-mode hy-mode alchemist tagedit smex rainbow-delimiters projectile paredit magit lfe-mode ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
+    (haxe-mode company flycheck erlang merlin utop tuareg racket-mode yaml-mode markdown-mode hy-mode alchemist tagedit smex rainbow-delimiters projectile paredit magit lfe-mode ido-ubiquitous exec-path-from-shell clojure-mode-extra-font-locking cider))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(show-paren-match ((t (:background "light gray" :foreground "dim gray" :weight bold)))))
